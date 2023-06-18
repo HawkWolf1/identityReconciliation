@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="userDetails.css">
+    <title>Login Page</title>
+    <style>
+        h3 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>USER DETAILS</h3>
+    
+    <form onsubmit="login(event)">
+        <p>
+            <label for="email">EMAIL</label>
+            <input id="email" type="email" name="email" size="50"><br>
+
+            <label for="phone">PHONE NUMBER</label>
+            <input id="phone" type="number" name="phone" size="50"><br>
+
+            <button type="submit">SUBMIT</button>
+        </p>
+    </form>
+   
+    <ul id="wholeList"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="userDetails.js"></script>
+</body>
+</html>

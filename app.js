@@ -12,7 +12,7 @@ const compression =require('compression')
 const morgan = require('morgan')
 
 
-// const userRoutes = require('./Routes/user')
+const userRoutes = require('./Routes/user')
 
 const mongoConnect = require('./Util/database')
  
@@ -24,7 +24,7 @@ const accessLogStream = fs.createWriteStream(
 
 app.use(bodyParser.json({extended: false})) 
 
-// app.use(userRoutes) 
+app.use(userRoutes) 
 
 
 app.use(compression())
