@@ -9,7 +9,7 @@ async function login(event){
         }
         console.log(user)
         try{
-            const response = await axios.post("http://localhost:4000/user/submit", user) 
+            const response = await axios.post("http://localhost:4000/user/identify", user) 
             console.log(response)
             if (response.status === 200){     
                 alert(response.data.message)
